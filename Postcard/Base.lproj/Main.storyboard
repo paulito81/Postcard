@@ -51,6 +51,14 @@
                                     <rect key="frame" x="31" y="274" width="330" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name label text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKL-0X-MmO" userLabel="NameLabel">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="31" y="123" width="242" height="55"/>
+                                </variation>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcard label text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4B-Ly-A1F" userLabel="MessageLabel">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -68,6 +76,7 @@
                                 <exclude reference="c4C-fo-f3u"/>
                                 <exclude reference="Abr-00-uny"/>
                                 <exclude reference="zZU-Ix-fyb"/>
+                                <exclude reference="wKL-0X-MmO"/>
                                 <exclude reference="A4B-Ly-A1F"/>
                             </mask>
                         </variation>
@@ -77,6 +86,7 @@
                                 <include reference="c4C-fo-f3u"/>
                                 <include reference="Abr-00-uny"/>
                                 <include reference="zZU-Ix-fyb"/>
+                                <include reference="wKL-0X-MmO"/>
                                 <include reference="A4B-Ly-A1F"/>
                             </mask>
                         </variation>
@@ -87,6 +97,7 @@
                         <outlet property="enterNameTextField" destination="c4C-fo-f3u" id="Ii6-Hl-1gk"/>
                         <outlet property="mailButton" destination="Abr-00-uny" id="0QH-HL-dR9"/>
                         <outlet property="messagelLabel" destination="A4B-Ly-A1F" id="PWq-a7-TGT"/>
+                        <outlet property="nameLabel" destination="wKL-0X-MmO" id="9PJ-xz-4ci"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROG-Hc-A67" userLabel="First Responder" sceneMemberID="firstResponder"/>
