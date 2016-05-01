@@ -12,6 +12,9 @@
 		DA03D0FA1CB4EDB6007456EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA03D0F81CB4EDB6007456EE /* Main.storyboard */; };
 		DA03D0FC1CB4EDB6007456EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA03D0FB1CB4EDB6007456EE /* Assets.xcassets */; };
 		DA03D0FF1CB4EDB6007456EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA03D0FD1CB4EDB6007456EE /* LaunchScreen.storyboard */; };
+		DA03D1091CBAB368007456EE /* sagrada-familia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA03D1071CBAB368007456EE /* sagrada-familia.jpg */; };
+		DA03D10A1CBAB368007456EE /* albert einstein.png in Resources */ = {isa = PBXBuildFile; fileRef = DA03D1081CBAB368007456EE /* albert einstein.png */; };
+		DA03D10C1CBAB776007456EE /* albert_Eint_stamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA03D10B1CBAB776007456EE /* albert_Eint_stamp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DA03D0FB1CB4EDB6007456EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA03D0FE1CB4EDB6007456EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA03D1001CB4EDB6007456EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA03D1071CBAB368007456EE /* sagrada-familia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sagrada-familia.jpg"; sourceTree = "<group>"; };
+		DA03D1081CBAB368007456EE /* albert einstein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albert einstein.png"; sourceTree = "<group>"; };
+		DA03D10B1CBAB776007456EE /* albert_Eint_stamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = albert_Eint_stamp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		DA03D0F31CB4EDB6007456EE /* Postcard */ = {
 			isa = PBXGroup;
 			children = (
+				DA03D1061CBAB33B007456EE /* Supporting Files */,
 				DA03D0F41CB4EDB6007456EE /* AppDelegate.swift */,
 				DA03D0F61CB4EDB6007456EE /* ViewController.swift */,
 				DA03D0F81CB4EDB6007456EE /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				DA03D1001CB4EDB6007456EE /* Info.plist */,
 			);
 			path = Postcard;
+			sourceTree = "<group>";
+		};
+		DA03D1061CBAB33B007456EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA03D10B1CBAB776007456EE /* albert_Eint_stamp.jpg */,
+				DA03D1071CBAB368007456EE /* sagrada-familia.jpg */,
+				DA03D1081CBAB368007456EE /* albert einstein.png */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +113,7 @@
 				TargetAttributes = {
 					DA03D0F01CB4EDB6007456EE = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 798LPQK9ZC;
+						DevelopmentTeam = 2H58E2Z8QG;
 					};
 				};
 			};
@@ -123,9 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA03D10A1CBAB368007456EE /* albert einstein.png in Resources */,
 				DA03D0FF1CB4EDB6007456EE /* LaunchScreen.storyboard in Resources */,
+				DA03D1091CBAB368007456EE /* sagrada-familia.jpg in Resources */,
 				DA03D0FC1CB4EDB6007456EE /* Assets.xcassets in Resources */,
 				DA03D0FA1CB4EDB6007456EE /* Main.storyboard in Resources */,
+				DA03D10C1CBAB776007456EE /* albert_Eint_stamp.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.phasfjo.Postcard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -263,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.phasfjo.Postcard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
